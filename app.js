@@ -131,7 +131,7 @@ function addEquipment(position) {
             new Cesium.HeadingPitchRoll(currentHeading, 0, 0)
         ),
         model: {
-            uri: 'models/equipment/equipment.glb',
+            uri: 'models/road/equipment.glb',
             minimumPixelSize: 32,
             maximumScale: 20000,
             scale: 1.0,
@@ -191,7 +191,7 @@ clearButton.addEventListener('click', function() {
 // 加载3D Tiles模型
 const tileset = viewer.scene.primitives.add(
     new Cesium.Cesium3DTileset({
-        url: 'models/road/tileset.json',
+        url: 'models/equipment/tileset.json',
         maximumScreenSpaceError: 2,
         maximumMemoryUsage: 512
     })
